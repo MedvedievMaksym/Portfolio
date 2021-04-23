@@ -32,6 +32,13 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 40px 20px 0 20px;
+            column-gap: 80px;
+        }
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -59,6 +66,12 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            column-gap: 60px;
+            grid-template-columns: repeat(2,320px);
         }
     }
 }
@@ -97,12 +110,20 @@
             }
         }
     }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            column-gap: 60px;
+            row-gap: 40px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
     .container {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 10px;
     }
     .title {
         &_fz48 {
@@ -128,6 +149,9 @@
         }
     }
     .about {
+        &__photo {
+            width: 300px;
+        }
         &__subtitle {
             line-height: 36px;
         }
@@ -136,6 +160,14 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+        p {
+            width: 300px;
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 5px 0 5px;
         }
     }
 }
